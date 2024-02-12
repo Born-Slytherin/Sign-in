@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="bg-[url('./images/background.jpeg')] bg-cover bg-no-repeat">
+    <section id="container" class="w-screen h-screen flex">
+      <form
+        action=""
+        method="post"
+        class="w-1/2 h-full p-12 flex flex-col items-center justify-evenly"
+      >
+        <h1 class="text-2xl font-bold text-blue-600 text-center">
+          Welcome Back
+        </h1>
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          class="w-3/4 p-4 rounded-2xl border border-gray-800"
+        />
+        <input
+          type="password"
+          name="email"
+          placeholder="Password"
+          class="w-3/4 p-4 rounded-2xl border border-gray-800"
+        />
+        <span class="text-lg font-bold text-blue-600 self-end mr-[100px]"
+          >Forgot password</span
+        >
+        <hr>
+        <a
+        
+          href=""
+          class="flex w-3/4 p-4 rounded-2xl bg-white h-[50px] items-center justify-center border border-gray-800"
+          ><img
+            class="w-[50px] h-[40px] absolute left-[150px]"
+            src="./images/google.png"
+            alt=""
+          />
+          <p class="font-bold">GOOGLE</p></a
+        >
+        <a
+          href=""
+          class="flex p-4 w-3/4 rounded-2xl bg-white h-[50px] items-center justify-center border border-gray-800"
+          ><img
+            class="w-[40px] h-[40px] absolute left-[150px]"
+            src="./images/facebook.png"
+            alt=""
+          />
+          <p class="font-bold">FACEBOOK</p></a
+        >
+
+        <div
+          class="flex w-3/4 rounded-2xl bg-blue-800 p-4 h-[50px] items-center justify-evenly text-white font-bold"
+        >
+          <input type="submit" name="submit" value="LOGIN" />
+          <svg
+            class="absolute left-[550px] w-[42px] h-[20px] invert"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+            />
+          </svg>
+        </div>
+        <p class="font-bold text-gray-800">
+          Don't have an account?<a class="text-blue-800" href="#">Sign Up</a>
+        </p>
+      </form>
+      <section
+        id="right"
+        class="w-1/2 h-full p-12 flex justify-center items-center"
+      >
+        <img src="/images/login.png" alt="" />
+      </section>
+    </section>
+  </body>
+</html>
