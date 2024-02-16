@@ -9,36 +9,39 @@
 <body class="w-screen h-screen bg-[url('./images/background.jpeg')] bg-cover bg-no-repeat box-border flex items-center">
     
     <form action="post" class="flex h-full w-full  flex-col items-center justify-center gap-[20px] md:w-1/2 ">
-      <h1 class="text-xl font-bold text-blue-900 text-center">Welcome Back</h1>
+      <h1 class="text-xl font-bold text-blue-600 text-center">Welcome Back</h1>
       <input class="w-3/4 p-[10px] rounded-2xl border-2 border-gray-600" type="email" name="email" placeholder="Your Email">
-      <input class="w-3/4 p-[10px] rounded-2xl border-2 border-gray-600" type="password" name="password" placeholder="Your password">
-      <span class="self-end" ><a href="#" class="text-sm text-blue-900 font-bold text-right mr-[40px] md:mr-[60px] lg:mr-[80px]">Forgot password?</a></span>
+     
+      <div class="w-3/4">
+        <input class="w-full p-[10px] rounded-2xl border-2 border-gray-600" type="password" name="password" placeholder="Your password"> 
+        <p class="w-full text-blue-600 text-right font-bold"><a href=""></a>Forgot Password?</p>
+      </div>
       <div class="flex w-3/4 items-center justify-center gap-[4px]">
         <div class="w-1/4 h-[1px] border-2 border-gray-600 " ></div>
         <span class="text-gray-600 text-xs" >Or continue with</span>
         <div class="w-1/4 h-[1px] border-2 border-gray-600" ></div>
       </div>
-      <a class="block border w-3/4 rounded-2xl bg-white border-gray-800 p-[10px]">
-        <button class="flex font-bold items-center">
-          <img class="w-[30px] h-[30px]" src="./images/google.png" alt="">
-          <span class="ml-[40px]">GOOGLE</span>
-        </button>
-      </a>
-      <a class="block border w-3/4 rounded-2xl bg-white border-gray-800 p-[10px]">
-        <button class="flex font-bold items-center">
-          <img class="w-[30px] h-[30px]" src="./images/facebook.png" alt="">
-          <span class="ml-[30px]">FACEBOOK</span>
-        </button>
-      </a>
-      <a class="block w-3/4 rounded-2xl bg-blue-600 text-white border-gray-800 p-[10px]">
-        <button class="block flex w-full font-bold justify-end items-center ">
-          <span class="">LOGIN</span>
-          <img class="w-[30px] h-[30px] invert block ml-[40px]" src="./images/arrow.png" alt="">
-        </button>
-      </a>
-      <p class="text-xs font-bold text-gray-900">Don't have an account?<a href="" class="text-blue-900">Sign Up</a></p>
+
+      <button class="flex w-3/4 rounded-xl bg-white border border-gray-800 p-2 items-center">
+        <img class="w-[30px] h-[30px]" src="./images/google.png" alt="">
+        <p class="w-full font-bold">GOOGLE</p>
+      </button>
+
+      <button class="flex w-3/4 rounded-xl bg-white border border-gray-800 p-2 items-center">
+        <img class="w-[30px] h-[30px]" src="./images/facebook.png" alt="">
+         <p class="w-full font-bold">FACEBOOK</p>
+      </button>
+
+      <button class="flex w-3/4 rounded-xl bg-blue-600 border border-gray-800 p-2 items-center" type="submit">
+        <p class="w-full font-bold text-white" >LOGIN</p>
+        <img src="./images/arrow.png" alt="" class="w-[30px] h-[30px] invert">
+      </button>
+
+      <p class="text-sm font-bold text-gray-900">Don't have an account?<a href="" class="text-blue-900">Sign Up</a></p>
+
     </form>
-    <img class="hidden md:block w-1/2 h-1/2" src="./images/login.png" alt="">
-    
+    <div class="hidden md:block md:w-1/2 md:h-full md:flex md:justify-center md:items-center lg:w-1/2">
+      <img src="./images/login.png" alt="" class="w-full lg:w-3/4 h-1/2">
+    </div>
 </body>
 </html>
