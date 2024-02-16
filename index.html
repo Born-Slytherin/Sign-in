@@ -1,47 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-In</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
+
 <body class="w-screen h-screen bg-[url('./images/background.jpeg')] bg-cover bg-no-repeat box-border flex items-center">
-    
+    <!-- Form Section -->
     <form action="post" class="flex h-full w-full  flex-col items-center justify-center gap-[20px] md:w-1/2 ">
+
+      <!-- Heading -->
       <h1 class="text-xl font-bold text-blue-600 text-center">Welcome Back</h1>
+
+      <!-- Email Input -->
       <input class="w-3/4 p-[10px] rounded-2xl border-2 border-gray-600" type="email" name="email" placeholder="Your Email">
      
+      <!-- Password Input and Forgot Password -->
       <div class="w-3/4">
         <input class="w-full p-[10px] rounded-2xl border-2 border-gray-600" type="password" name="password" placeholder="Your password"> 
         <p class="w-full text-blue-600 text-right font-bold"><a href=""></a>Forgot Password?</p>
       </div>
+
+      <!-- Dividing Section -->
       <div class="flex w-3/4 items-center justify-center gap-[4px]">
         <div class="w-1/4 h-[1px] border-2 border-gray-600 " ></div>
         <span class="text-gray-600 text-xs" >Or continue with</span>
         <div class="w-1/4 h-[1px] border-2 border-gray-600" ></div>
       </div>
 
+      <!-- Google button -->
       <button class="flex w-3/4 rounded-xl bg-white border border-gray-800 p-2 items-center">
         <img class="w-[30px] h-[30px]" src="./images/google.png" alt="">
         <p class="w-full font-bold">GOOGLE</p>
       </button>
 
+      <!-- Facebook Button -->
       <button class="flex w-3/4 rounded-xl bg-white border border-gray-800 p-2 items-center">
         <img class="w-[30px] h-[30px]" src="./images/facebook.png" alt="">
          <p class="w-full font-bold">FACEBOOK</p>
       </button>
 
+      <!-- Login Button -->
       <button class="flex w-3/4 rounded-xl bg-blue-600 border border-gray-800 p-2 items-center" type="submit">
         <p class="w-full font-bold text-white" >LOGIN</p>
         <img src="./images/arrow.png" alt="" class="w-[30px] h-[30px] invert">
       </button>
 
+      <!-- Sign UP section -->
       <p class="text-sm font-bold text-gray-900">Don't have an account?<a href="" class="text-blue-900">Sign Up</a></p>
 
     </form>
+
+    <!-- Image to be displayed at laptop width -->
     <div class="hidden md:block md:w-1/2 md:h-full md:flex md:justify-center md:items-center lg:w-1/2">
       <img src="./images/login.png" alt="" class="w-full lg:w-3/4 h-1/2">
     </div>
+
 </body>
 </html>
